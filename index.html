@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="Logo_last.png" />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+      footer {
+        width: 100%;
+      background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    footer::after {
+      content: '';
+      position: relative;
+      
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      /* z-index: 1; */
+      border-radius: 15px;
+    }
+
+    footer span {
+      position: relative;
+    }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Multiplication Tables</div>
+          <div class="lesson-content">
+            <div>
+              <p>
+                Multiplication is a way of adding the same number again and again. A multiplication table helps us find answers quickly.
+              </p>
+              <h2 style="color: blueviolet;"><u>The 2 time table:</u></h2>
+             <P>
+              Multiplying by <b>2</b> is just <b>adding the number to itself</b>
+             </P>
+             <img width="50%" src="./images/6.png" alt="">
+              <h2 style="color: blueviolet;"><u>The 3 times table:</u></h2>
+             <p>
+              Let’s learn the <b>3 times table.</b>
+              <br>Each finger has <b>3 creases</b>.
+              <br><img style="display: inline;" width="40%" src="./images/7.png" alt="">
+<br>To find <b>3 × 3</b>, raise <b>3 fingers</b> and count creases <b>(9)</b>.
+<br><img style="display: inline;" width="35%" src="./images/8.png" alt="">
+<br>Therefore, 3 x 3 = 9.
+<br><b>Now, let’s see the 3 times table:</b>
+
+             </p>
+              <img width="50%" src="./images/9.png" alt="">
+              <h2 style="color: blueviolet;"><u>4 times table: </u></h2>
+              <p>
+                Let’s learn the 4 times table. 
+                <br>We can use a simple trick to find result of any number times 4:
+<br><br><b>Multiply by 2, then double the result.</b>
+<br><br><b style="color: #4CAF50;">Example:</b> <b>5 × 4 = ?</b>
+<br>First, <b>5 × 2 = 10</b>
+<br>Then, 10 + 10 = 20
+              </p>
+              
+              <img width="50%" src="./images/10.png" alt="">
+              <h2 style="color: blueviolet;"><u>5 times table:</u></h2>
+             <p>
+              Let’s learn the 5 times table.
+              <br>When you multiply by <b>5</b>, the answers always end in <b>0</b> or <b>5!</b>
+<br>If the number is <b>even ( 2 , 4 , 6, 8, 10, 12)</b> → The answer ends in <b>0</b>
+<br>If the number is <b>odd ( 3, 5 , 7, 9, 11)</b>  → The answer ends in <b>5</b>.
+<br><br><b style="color: #4CAF50;">Example:</b>
+
+
+             </p>
+             <ul>
+              <li><b>2 × 5 = 10 (ends in 0)</b></li>
+              <li><b>3 × 5 = 15 (ends in 5)</b></li>
+             </ul>
+             <p>
+              Also, the <b>5 times table </b>follows a skip-counting pattern:
+<br><b> 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60</b> 
+             </p>
+              <img width="50%" src="./images/11.png" alt="">
+              <h2 style="color: blueviolet;"><u>6 times table:</u></h2>
+              <p>
+                This means we will be adding the number 6 over and over again. 
+              </p>
+              <img width="50%" src="./images/12.png" alt="">
+              <h1 style="color: red;text-align: center;"><u>Important point:</u></h1>
+              <h2 style="color: blueviolet;"><u>Order of multiplication:</u></h2>
+              <p>
+                Let's show that 1 × 2 = 2 × 1
+              </p>
+              <ol>
+                <li>
+                 <b style="color: red;"> What is 1 × 2 ?</b>
+                 <br>When we say 1 × 2, it means "1 group of 2."
+                 <br>Imagine you have 1 plate with 2 muffins in it.
+                  <br><img width="30%" src="./images/13.png" alt="">
+                 <br>Now, count how many muffins you have on the plate. You will count <b>2 muffins</b>.
+                 <br>So, 1 × 2 = <b>2</b>.
+
+                </li><br>
+                <li>
+                  <b style="color: red;">What is 2 × 1?</b>
+                  <br>When we say 2 × 1, it means "2 groups of 1." 
+                  <br>Imagine you have 2 plates, but each plate has only 1 muffin.
+                  <br><img width="45%" src="./images/14.png" alt="">
+                  <br>Now, count how many muffins are there in total. You will count <b>2 muffins</b> (1 muffin in each basket, and there are 2 baskets).
+                  <br>So, 2 × 1 = <b>2</b>
+
+                </li>
+              </ol>
+              <p>
+                Both 1 × 2 and 2 × 1 give the same answer: 2.
+                <br><img width="50%" src="./images/15.png" alt="">
+                <br><br>This shows that <b>the order of numbers doesn't matter in multiplication</b>.
+
+                <br><br><b>For example:</b>
+
+              </p>
+              <ul>
+                <li>
+                  <b>2 × 3 = 6</b> (We add 2 three times: <b>2 + 2 + 2 = 6</b>)
+                </li>
+                <li><b>3 × 2 = 6</b> (We add 3 two times: <b>3 + 3 = 6</b>)</li>
+              </ul>
+              <img width="50%" src="./images/17.png" alt="">
+              <p>
+                Both give the same result: <b>6</b>
+                <br><br><b>Here’s another example:</b>
+                 
+              </p>
+              <ul>
+                <li><b>4 × 5 = 20</b> (We add 4 five times: <b>4 + 4 + 4 + 4 + 4 = 20</b>)</li>
+                <li><b>5 × 4 = 20</b> (We add 5 four times: <b>5 + 5 + 5 + 5 = 20</b>)</li>
+              </ul>
+              <img width="50%" src="./images/16.png" alt="">
+              <p>
+                Both give the same result: <b>20</b>
+              </p>
+            </div>
+      </div>
+      
+    </div>
+    <footer>
+      <span>Created By Team Way To Succeed</span>
+    </footer>
+  </body>
+</html>
